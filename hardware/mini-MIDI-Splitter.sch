@@ -16108,35 +16108,35 @@ SOIC-4:
 <part name="X6" library="jason_eagle6" deviceset="DIN5PIN" device=""/>
 <part name="IN" library="jason_eagle6" deviceset="DIN5PIN" device=""/>
 <part name="IC2" library="40xx" deviceset="4050" device="D"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R11" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R18" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R17" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
 <part name="IC1" library="optocoupler" deviceset="6N138" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
 <part name="IC3" library="burr-brown" deviceset="REG1117" device=""/>
 <part name="VIN" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="GND" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="TR1" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="MMBT3906LT1"/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R0805" value="220r"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="LED2" library="led" deviceset="LED" device="3MM"/>
-<part name="R15" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
-<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2-4"/>
-<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2-4"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="C4" library="rcl" deviceset="CPOL-EU" device="E2-4" value="4u7"/>
+<part name="C5" library="rcl" deviceset="CPOL-EU" device="E2-4" value="4u7"/>
 <part name="D1" library="jasons_stuff" deviceset="0805DIODE" device=""/>
 <part name="IC4" library="microbuilder" deviceset="BRIDGERECTIFIER" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805"/>
