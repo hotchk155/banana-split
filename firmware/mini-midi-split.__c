@@ -1,0 +1,9 @@
+[Settings]
+Active Directory=D:\GitHub\mini-MIDI-Splitter\firmware\
+Target=PIC12F1822
+Active Compiler=BoostC
+Active Config=Release
+Config=0
+[Files]
+Count=1
+File0=mini-midi-split.c
