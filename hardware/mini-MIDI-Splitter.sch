@@ -15238,7 +15238,7 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <text x="106.172" y="-96.266" size="3.81" layer="95">MIDI OUTPUTS</text>
 <text x="-39.878" y="-75.184" size="3.81" layer="95">MIDI INPUT</text>
 <text x="-15.24" y="-24.13" size="3.81" layer="95">PROCESSOR</text>
-<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV3</text>
+<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV4</text>
 <text x="-68.834" y="-96.012" size="5.08" layer="95">Jason Hotchkiss</text>
 </plain>
 <instances>
@@ -15570,6 +15570,32 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="25.4" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
 <junction x="25.4" y="7.62"/>
 <label x="30.48" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="40.64" x2="193.04" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="40.64" x2="193.04" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="X2" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="15.24" x2="193.04" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-10.16" x2="193.04" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-35.56" x2="193.04" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-60.96" x2="193.04" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-86.36" x2="193.04" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="15.24" x2="193.04" y2="15.24" width="0.1524" layer="91"/>
+<junction x="193.04" y="15.24"/>
+<pinref part="X3" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="-10.16" x2="193.04" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="193.04" y="-10.16"/>
+<pinref part="X4" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="-35.56" x2="193.04" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="193.04" y="-35.56"/>
+<pinref part="X5" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="-60.96" x2="193.04" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="193.04" y="-60.96"/>
+<pinref part="X6" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="-86.36" x2="193.04" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="193.04" y="-86.36"/>
+<label x="195.58" y="-96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$24" class="0">

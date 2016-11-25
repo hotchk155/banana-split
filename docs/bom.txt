@@ -1,0 +1,14 @@
+R1, R3   						1k8 0805
+R2, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R16, R17, R18 	220R 0805                              
+R13, R15  						1k 0805     
+C1, C2, C3						100nF 0805             
+C4, C5    						4u7                                                   	
+D1   							1N4148 0805                                
+IC1  							6N138     
+IC2  							4050D                         		
+IC3  							REG1117 SOT223    
+IC4  							BRIDGE RECTIFIER SOIC-4 
+TR1            						3906 PNP SOT23              
+                    
+
+2 x wire 3"
