@@ -1,14 +1,48 @@
-R1, R3   						1k8 0805
-R2, R4, R5, R6, R7, R8, R9, R10, R11, R12, R14, R16, R17, R18 	220R 0805                              
-R13, R15  						1k 0805     
-C1, C2, C3						100nF 0805             
-C4, C5    						4u7                                                   	
-D1   							1N4148 0805                                
-IC1  							6N138     
-IC2  							4050D                         		
-IC3  							REG1117 SOT223    
-IC4  							BRIDGE RECTIFIER SOIC-4 
-TR1            						3906 PNP SOT23              
-                    
+Partlist exported from D:/GitHub/banana-split/hardware/banana-split.sch at 16/09/2017 11:13:05
 
-2 x wire 3"
+Part Value                 Device                Package               Description                                         MF                MPN     OC_FARNELL OC_NEWARK
+C1   100n                  C-EUC0805             C0805                 CAPACITOR, European symbol                                                                        
+C2   100n                  C-EUC0805             C0805                 CAPACITOR, European symbol                                                                        
+C3                         C-EUC0805             C0805                 CAPACITOR, European symbol                                                                        
+C4   100n                  C-EUC0805             C0805                 CAPACITOR, European symbol                                                                        
+C5   4u7                   CPOL-EUE2-4           E2-4                  POLARIZED CAPACITOR, European symbol                                                              
+C6   4u7                   CPOL-EUE2-4           E2-4                  POLARIZED CAPACITOR, European symbol                                                              
+CLK                        LED3MM                LED3MM                LED                                                                                               
+D1   0805DIODE             0805DIODE             0805DIODE                                                                                                               
+DAT                        LED3MM                LED3MM                LED                                                                                               
+IC1  REG1117               REG1117               SOT223                800mA and 1A Low Dropout (LDO) Positive Regulator                     REG1117 1097566    14P6981  
+IC2  4050D                 4050D                 SO16                  Hex non-inverting BUFFER                                                                          
+IC3  PIC12F1822SO08        PIC12F1822SO08        SO08                                                                                                                    
+IC4  6N138                 6N138                 DIL08                 MOTOROLA OPTO COUPLER                               VISHAY/TELEFUNKEN 6N138   9860150    35K5294  
+IC5                        BRIDGERECTIFIER       SOIC-4                Bridge Rectifier                                                                                  
+ICSP                       TC2030-MCP-NL         TC2030-MCP-NL         TAG-CONNECT ICSP ConnectorManufacturer: Tag-Connect                                               
+IN   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+PWR                        LED3MM                LED3MM                LED                                                                                               
+R1   1k                    R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R2   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R3   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R4   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R5   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R6   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R7   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R8   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R9   220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R10  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R11  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R12  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R13  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R14  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R15  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R16  220r                  R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R17  1k8                   R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+R18  1k8                   R-EU_R0805            R0805                 RESISTOR, European symbol                                                                         
+RA2                        PINHD-1X1             1X01                  PIN HEADER                                                                                        
+RA4                        PINHD-1X1             1X01                  PIN HEADER                                                                                        
+U$1  PWR_SOCKET_2_1MM      PWR_SOCKET_2_1MM      PWR_SOCKET_2_1MM                                                                                                        
+X1   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X2   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X3   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X4   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X5   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X6   DIN5PIN               DIN5PIN               EDGEDIN               Female CONNECTOR                                                                                  
+X7   VERTICAL_3_5MM_SOCKET VERTICAL_3_5MM_SOCKET VERTICAL_3_5MM_SOCKET                                                                                                   

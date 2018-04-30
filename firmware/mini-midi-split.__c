@@ -1,5 +1,5 @@
 [Settings]
-Active Directory=D:\GitHub\mini-MIDI-Splitter\firmware\
+Active Directory=D:\GitHub\banana-split\firmware\
 Target=PIC12F1822
 Active Compiler=BoostC
 Active Config=Release
