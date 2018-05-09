@@ -15,8 +15,9 @@
 //
 // VERSION
 // 1 	16aug16		initial release
+// 2 	09may18		16th note pulse clock	
 //	
-#define VERSION 1
+#define VERSION 2
 ////////////////////////////////////////////////////////////
 
 //
@@ -39,7 +40,7 @@
 #define P_CLKLED		porta.1
 #define P_DATLED		porta.0
 #define P_RUN			porta.2
-#define P_DIV2			porta.4
+#define P_PULSE			porta.4
 
 // Timer settings
 #define TIMER_0_INIT_SCALAR		5	// Timer 0 is an 8 bit timer counting at 250kHz
@@ -48,17 +49,20 @@
 #define DAT_LED_TIMEOUT	1
 #define CLK_LED_TIMEOUT	50
 
-// Duration of pulses on clock/2 output
-#define DIV2_TIMEOUT 15
+// Duration of pulses on pulse clock output
+#define PULSE_TIMEOUT 15
+
+// Frequency of pulses on pulse clock output
+#define PULSE_DIV 6
 
 typedef unsigned char byte;
 
 // COUNTERS
 volatile byte dat_timeout;
 volatile byte clk_timeout;
-volatile byte div2_timeout;
+volatile byte pulse_timeout;
 volatile byte clk_count;
-volatile byte div2;
+volatile byte pulse_count;
 
 ////////////////////////////////////////////////////////////
 //
@@ -85,17 +89,19 @@ void interrupt( void )
 			case 0xf8: // CLOCK
 				if(!clk_count) {
 					P_CLKLED = 1;	
-					clk_timeout = CLK_LED_TIMEOUT;
-					
-					if(!div2) {
-						P_DIV2 = 1;
-						div2_timeout = DIV2_TIMEOUT;
-					}
-					div2 = !div2;
-				}
+					clk_timeout = CLK_LED_TIMEOUT;					
+				}				
 				if(++clk_count >= 24) {
 					clk_count = 0;
 				}
+				
+				if(!pulse_count) {
+					P_PULSE = 1;
+					pulse_timeout = PULSE_TIMEOUT;
+				}
+				if(++pulse_count >= PULSE_DIV) {
+					pulse_count = 0;
+				}				
 				break;
 			case 0xfa: // START
 				clk_count = 0;
@@ -128,9 +134,9 @@ void interrupt( void )
 				P_CLKLED = 0;
 			}
 		}
-		if(div2_timeout) {
-			if(--div2_timeout == 0) {
-				P_DIV2 = 0;
+		if(pulse_timeout) {
+			if(--pulse_timeout == 0) {
+				P_PULSE = 0;
 			}
 		}
 		intcon.2 = 0;
@@ -209,7 +215,7 @@ void main()
 	apfcon.2=1;	// TX on RA4
 
 	P_RUN = 0;
-	P_DIV2 = 0;
+	P_PULSE = 0;
 	
 	// startup flash
 	P_DATLED = 1;
@@ -220,9 +226,9 @@ void main()
 
 	dat_timeout = 0;
 	clk_timeout = 0;
-	div2_timeout = 0;
+	pulse_timeout = 0;
 	clk_count = 0;
-	div2 = 0;
+	pulse_count = 0;
 
 	init_timer();
 	init_usart();
