@@ -4,6 +4,15 @@ Target=PIC12F1822
 Active Compiler=BoostC
 Active Config=Release
 Config=0
+Type=0
+Warnings=1
+Model=0
 [Files]
 Count=1
 File0=mini-midi-split.c
+[Tools]
+BoostDir=C:\Program Files (x86)\SourceBoost\
+Programmer=
+PrefixWithBuildThreadNum=0
+[Debugger]
+DebugFromMain=1

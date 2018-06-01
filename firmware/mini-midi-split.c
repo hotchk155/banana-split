@@ -16,14 +16,16 @@
 // VERSION
 // 1 	16aug16		initial release
 // 2 	09may18		16th note pulse clock	
+// 3 	01jun18		Allow clock pulse rate control via Sysex
 //	
-#define VERSION 2
+#define VERSION 3
 ////////////////////////////////////////////////////////////
 
 //
 // INCLUDE FILES
 //
 #include <system.h>
+#include <eeprom.h>
 
 //
 // PIC12F1822 MCU CONFIG
@@ -37,10 +39,10 @@
 //
 // CONSTANTS
 //
-#define P_CLKLED		porta.1
-#define P_DATLED		porta.0
-#define P_RUN			porta.2
-#define P_PULSE			porta.4
+#define P_CLKLED		lata.1
+#define P_DATLED		lata.0
+#define P_RUN			lata.2
+#define P_PULSE			lata.4
 
 // Timer settings
 #define TIMER_0_INIT_SCALAR		5	// Timer 0 is an 8 bit timer counting at 250kHz
@@ -49,12 +51,16 @@
 #define DAT_LED_TIMEOUT	1
 #define CLK_LED_TIMEOUT	50
 
-// Duration of pulses on pulse clock output
-#define PULSE_TIMEOUT 15
+// Special value identifies initialised eeprom data
+#define MAGIC_COOKIE 0xA5
 
-// Frequency of pulses on pulse clock output
-#define PULSE_DIV 6
+// Config defaults
+#define DEFAULT_PULSE_DIV 12	// 24ppqn divider (eighth notes)
+#define DEFAULT_PULSE_DUR 15	// approx pulse length (15 ms)
 
+//
+// TYPES
+//
 typedef unsigned char byte;
 
 // COUNTERS
@@ -63,6 +69,11 @@ volatile byte clk_timeout;
 volatile byte pulse_timeout;
 volatile byte clk_count;
 volatile byte pulse_count;
+volatile byte new_div;
+volatile byte new_dur;
+volatile byte sysex_index;
+byte pulse_div;
+byte pulse_dur;
 
 ////////////////////////////////////////////////////////////
 //
@@ -97,9 +108,9 @@ void interrupt( void )
 				
 				if(!pulse_count) {
 					P_PULSE = 1;
-					pulse_timeout = PULSE_TIMEOUT;
+					pulse_timeout = pulse_dur;
 				}
-				if(++pulse_count >= PULSE_DIV) {
+				if(++pulse_count >= pulse_div) {
 					pulse_count = 0;
 				}				
 				break;
@@ -113,6 +124,38 @@ void interrupt( void )
 			case 0xfc: // STOP
 				P_RUN = 0;
 				break;
+			default: // WATCH FOR CONFIG SYSEX
+				switch(sysex_index) {
+					case 0: if(b == 0xF0) sysex_index = 1; break;
+					case 1:	if(b == 0x00) ++sysex_index; else sysex_index = 0; break;
+					case 2:	if(b == 0x7F) ++sysex_index; else sysex_index = 0; break;
+					case 3:	if(b == 0x18) ++sysex_index; else sysex_index = 0; break;
+					case 4:	if(b == 0x0a) ++sysex_index; else sysex_index = 0; break;
+					case 5:	if(b == 0x05) ++sysex_index; else sysex_index = 0; break;
+					case 6:	new_div = b; ++sysex_index; break; 
+					case 7:	new_dur = b; ++sysex_index; break; 
+					case 8:	if(b == 0xF7) {					
+						if(new_div && new_dur) {									
+							// store the new divider and flash the LEDs. 
+							// Do not return - device must be reset						
+							eeprom_write(1, new_div);
+							eeprom_write(2, new_dur);
+							while(1) {
+								P_DATLED = 0;
+								P_CLKLED = 1;
+								delay_ms(100);
+								P_DATLED = 1;
+								P_CLKLED = 0;
+								delay_ms(100);			
+							}
+						}
+					}
+					// fall thru
+					default:
+						sysex_index = 0; 
+						break;
+					}
+					break;
 		}		
 		pir1.5 = 0;
 	}
@@ -172,7 +215,6 @@ void init_usart()
 		
 	spbrgh = 0;		// brg high byte
 	spbrg = 15;		// brg low byte (31250)	
-	
 }
 
 ////////////////////////////////////////////////////////////
@@ -211,11 +253,27 @@ void main()
 	ansela 	= 0b00000000;
 	porta	= 0b00000000;
 
+	// Read the divider value for the beat clock
+	// - default is eighth beat (12 x ppqn)
+	pulse_div = DEFAULT_PULSE_DIV;
+	pulse_dur = DEFAULT_PULSE_DUR;
+	if(eeprom_read(0) != MAGIC_COOKIE) {
+		eeprom_write(1, pulse_div);
+		eeprom_write(2, pulse_dur);
+		eeprom_write(0, MAGIC_COOKIE);
+	}
+	else {
+		pulse_div = eeprom_read(1);
+		pulse_dur = eeprom_read(2
+		);
+	}
+
 	apfcon.7=1; // RX on RA5
 	apfcon.2=1;	// TX on RA4
 
 	P_RUN = 0;
 	P_PULSE = 0;
+
 	
 	// startup flash
 	P_DATLED = 1;
@@ -229,7 +287,8 @@ void main()
 	pulse_timeout = 0;
 	clk_count = 0;
 	pulse_count = 0;
-
+	sysex_index = 0;
+	
 	init_timer();
 	init_usart();
 	
