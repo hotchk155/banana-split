@@ -15,6 +15,9 @@
 #pragma DATA _CONFIG2, _WRT_OFF & _PLLEN_OFF & _STVREN_ON & _BORV_19 & _LVP_OFF
 #pragma CLOCK_FREQ 16000000
 
+#define TRIS_A 0b11111011
+#define TRIS_C 0b11110011
+
 //
 // TYPE DEFS
 //
@@ -24,12 +27,21 @@ typedef unsigned char byte;
 // MACRO DEFS
 //
 
-#define P_LEDR 	lata.0
-#define P_LEDG  lata.1
-#define P_LEDY  lata.2
-#define P_LEDB  latc.0
+#define P_LED1		latc.2 	// MIDI input red LED
+#define P_LED2		latc.3 	// Blue LED
+#define P_LED3		lata.2 	// Yellow LED
+#define P_SWITCH	porta.5
 
-#define P_BUTTON  portc.3
+#define P_RED		P_LED1
+#define P_BLUE		P_LED2
+#define P_YELLOW	P_LED3
+
+
+//#define P_LEDR 	lata.0
+//#define P_LEDG  lata.1
+//#define P_LEDY  lata.2
+//#define P_LEDB  latc.0
+//#define P_BUTTON  portc.3
 
 // MIDI beat clock messages
 #define MIDI_SYNCH_TICK     	0xf8
@@ -207,7 +219,7 @@ byte do_test()
 	
 	for(int i=0; i<80; i++)
 	{		
-		P_LEDB = !beat;
+		P_BLUE = !beat;
 		if(++beat == 24) beat = 0;
 		if(!test_midi(MIDI_SYNCH_TICK))
 			return 0;
@@ -253,6 +265,10 @@ void setBPM(int b)
 }
 
 
+#define P_LED1		latc.2 	// MIDI input red LED
+#define P_LED2		latc.3 	// Blue LED
+#define P_LED3		lata.2 	// Yellow LED
+#define P_SWITCH	porta.5
 
 ////////////////////////////////////////////////////////////
 // MAIN
@@ -263,13 +279,13 @@ void main()
 	osccon = 0b01111010;
 	
 	// configure io
-	trisa = 0b00110000;              	
-    trisc = 0b00111000;              
+	trisa = TRIS_A;              	
+    trisc = TRIS_C;              
 	ansela = 0b00000000;
 	anselc = 0b00000000;
 	porta=0;
 	portc=0;
-	wpuc.3=1;
+	wpua.5=1;
 	option_reg.7=0	;
 		
 	// initialise MIDI comms
@@ -309,21 +325,33 @@ void main()
 	
 	delay_ms(200);
 	// App loop
-	P_LEDG = 1;
 	for(;;)
 	{	
-		while(P_BUTTON) {
-			P_LEDB = !beat;
+		P_YELLOW = 0;
+		while(P_SWITCH) {
+			P_BLUE = !beat;
 			if(++beat == 24) beat = 0;
 			send(MIDI_SYNCH_TICK);			
 			delay_ms(BEAT_DELAY);
 		}		
-		P_LEDG = 0;
-		P_LEDR = 0;
-		P_LEDY = 1;
+		P_RED = 1;
 		byte result = do_test();
-		P_LEDG = !!result;
-		P_LEDR = !result;
-		P_LEDY = 0;
+		P_RED = 0;
+		if(result) {
+				P_BLUE=1;
+				P_YELLOW=1;
+				delay_s(1);
+				P_BLUE=1;
+				P_YELLOW=1;
+		}
+		else {
+			for(int i=0; i<3; ++i) {
+				P_BLUE = 0;
+				P_YELLOW=1;
+				delay_s(1);
+				P_YELLOW=0;
+				delay_ms(200);
+			}
+		}
 	}
 }

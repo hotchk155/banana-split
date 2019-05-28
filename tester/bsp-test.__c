@@ -2,8 +2,8 @@
 Active Directory=D:\GitHub\banana-split\tester\
 Target=PIC16LF1825
 Active Compiler=BoostC
-Active Config=Debug
-Config=1
+Active Config=Release
+Config=0
 [Files]
 Count=1
 File0=bsp-test.c
