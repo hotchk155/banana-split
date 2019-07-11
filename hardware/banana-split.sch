@@ -14494,301 +14494,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="microbuilder">
-<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
-
-&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
-
-&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
-&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
-
-&lt;h3&gt;Revision History&lt;/h3&gt;
-&lt;p&gt;
-&lt;table width="100%" bgcolor="#EEE"&gt;
-&lt;tr bgcolor="#CCC"&gt;
-  &lt;td width="60"&gt;
-&lt;b&gt;Version&lt;/b&gt;
-  &lt;/td&gt;
-  &lt;td width="100"&gt;
-&lt;b&gt;Release Date&lt;/b&gt;
-  &lt;/td&gt;
-  &lt;td&gt;
-&lt;b&gt;Changes&lt;/b&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.07&lt;/td&gt;
-  &lt;td&gt;--&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;2N7002PS - Dual N-Channel MOSFET (SOT363)&lt;/li&gt;
-    &lt;li&gt;24AA256 - 256K (32K x 8) I2C EEPROM&lt;/li&gt;
-    &lt;li&gt;74HC4050D - 6-channel level shifter&lt;/li&gt;
-    &lt;li&gt;74LCX245MTC - 8-bit 5.0-3.3V level shifter&lt;/li&gt;
-    &lt;li&gt;93LC46B - 1K 16-Bit EEPROM (for FT2232H)&lt;/li&gt;
-    &lt;li&gt;A4983 - Stepper Motor Driver&lt;/li&gt;
-    &lt;li&gt;AD7780 - 24-Bit Sigma-Delta ADC with 128x PGA&lt;/li&gt;
-    &lt;li&gt;ADP3303 - High Accuracy 200 mA LDO&lt;/li&gt;
-    &lt;li&gt;ADXL345 - Digital Accelerometer&lt;/li&gt;
-    &lt;li&gt;ANT-868-SP - 868MHz SMT Antenna&lt;/li&gt;
-    &lt;li&gt;BMP085 - Digital Pressue Sensor&lt;/li&gt;
-    &lt;li&gt;FT2232H - Dual High-Speed USB to UART (LQFP64)&lt;/li&gt;
-    &lt;li&gt;ILI9481_LCD - 320x480 LCD&lt;/li&gt;
-    &lt;li&gt;ISL12022M - Temp Comp. RTC&lt;/li&gt;
-    &lt;li&gt;HMC5883L - Digital 3-Axis Compass&lt;/li&gt;
-    &lt;li&gt;ITG-3200 - Digital 3-Axis Gyroscope&lt;/li&gt;
-    &lt;li&gt;L3G2400D - 3-Axis I²C/SPI Gyroscope&lt;/li&gt;
-    &lt;li&gt;LAN8720 - 10/100 Ethernet PHY (QFN-24)&lt;/li&gt;
-    &lt;li&gt;LM4811 - Headphone Amplifier&lt;/li&gt;
-    &lt;li&gt;LOADCELL - Connectors for 4-wire load cells&lt;/li&gt;
-    &lt;li&gt;LPC1227/6/5/4 - Cortex M0 MCU&lt;/li&gt;
-    &lt;li&gt;LTC3581 - 3.3A Boost/Inverting DC/DC&lt;/li&gt;
-    &lt;li&gt;M25P16 - 16MBit Serial Flash (SPI)&lt;/li&gt;
-    &lt;li&gt;MAX3421E - USB Device/Host Controller&lt;/li&gt;
-    &lt;li&gt;MCP6022 - Dual 10MHz Op-Amp (SOIC8)&lt;/li&gt;
-    &lt;li&gt;MCP73871 - LIPO Battery Charger&lt;/li&gt;
-    &lt;li&gt;OL2381 - 315/434/868/915 MHz Transceiver&lt;/li&gt;
-    &lt;li&gt;PCF2129A - High Accuracy RTC w/Integrated Crystal&lt;/li&gt;
-    &lt;li&gt;SN74AUP - Tri-State Buffer&lt;/li&gt;
-    &lt;li&gt;SPX29302 - 3A 1% Adjustable LDO Regulator (TO263)&lt;/li&gt;
-    &lt;li&gt;STEREOJACK - 3.5mm Headphone Jack (Courtesy Adafruit)&lt;/li&gt;
-    &lt;li&gt;TPS61029 - Boost Converter/li&gt;
-    &lt;li&gt;TXS0102 - 2-Bit bi-directional level shifter (I2C)&lt;/li&gt;
-    &lt;li&gt;TXB0104PWR - 4-Bit bi-directional level shifter&lt;/li&gt;
-    &lt;li&gt;TXB0108PWR - 8-Bit bi-directional level shifter&lt;/li&gt;
-    &lt;li&gt;UPD5713TK - 50MHz-2.5GHz SPDT Switch&lt;/li&gt;
-    &lt;li&gt;VCNL4000 - Digital Proximity and Light Sensor&lt;/li&gt;
-  &lt;/ul&gt;
-Parts Updated:
-  &lt;ul&gt;
-    &lt;li&gt;LPC1754 - Removed 1756+ pin labels (ENET+I2S)&lt;/li&gt;
-    &lt;li&gt;JST_2PIN - Added SH-type connector as well&lt;/li&gt;
-    &lt;li&gt;LED_RGB_PLCC6 - Changed to CREE CLV61-FKB&lt;/li&gt;
-    &lt;li&gt;TSL2561 - Added DFN footprint (CS obsolete)&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.06&lt;/td&gt;
-  &lt;td&gt;10 August 2010&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;ADM1191 - I2C Digital Power Monitor&lt;/li&gt;
-    &lt;li&gt;ADT7410 - 13-bit +/-0.5°C I2C Temp. Sensor&lt;/li&gt;
-    &lt;li&gt;DP83848 - 10/100 Ethernet Transceiver (40-LLP)&lt;/li&gt;
-    &lt;li&gt;ILI9325 - 2.8" TFT LCD w/Touch Screen&lt;/li&gt;
-    &lt;li&gt;LM358 - SOIC8 OP-AMP&lt;/li&gt;
-    &lt;li&gt;LM2671 - 500mA Switching Step-Down Voltage Regulator&lt;/li&gt;
-    &lt;li&gt;LPC1768 - 100MHz Cortex M3, 512KB Flash/64KB SRAM&lt;/li&gt;
-    &lt;li&gt;LPC313x/314x - ARM926EJ-S MCUs (TFBGA180)&lt;/li&gt;
-    &lt;li&gt;LTC3554 - USB Lipo Charger w/Dual Step-Down&lt;/li&gt;
-    &lt;li&gt;MBED - MBED footprint and pinout&lt;/li&gt;
-    &lt;li&gt;MIC5387 - 3 Output 150mA LDO&lt;/li&gt;
-    &lt;li&gt;MICROSD - uSD/Transflash Connector&lt;/li&gt;
-    &lt;li&gt;MOSFET-P - P-Channel MOSFET&lt;/li&gt;
-    &lt;li&gt;MT48H32M16LF - 512Mb Low-Power SDRAM (VFBGA54)&lt;/li&gt;
-    &lt;li&gt;OSCILLATOR - 5x7mm SMT Oscillator&lt;/li&gt;
-    &lt;li&gt;S1D13743 - TFT LCD Controller with 464K SRAM&lt;/li&gt;
-    &lt;li&gt;VREG_SOT23-5 - Single Part for SOT23-5 Linear Regulators&lt;/li&gt;
-  &lt;/ul&gt;
-  Parts Updated:
-  &lt;ul&gt;
-    &lt;li&gt;DCBarrel: Fixed reversed GND/GNDBreak pins on SMT version&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.05&lt;/td&gt;
-  &lt;td&gt;24 April, 2010&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;AT25040A - Atmel 1K/4K SPI EEPROM (SOIC8 and TSSOP8)&lt;/li&gt;
-    &lt;li&gt;BRIDGERECTIFIER - Comchip C4S-G 400V 800mA Peak 1.1V Vf&lt;/li&gt;
-    &lt;li&gt;DIODE-ZENER - Zener Diode&lt;/li&gt;
-    &lt;li&gt;FTDIUSBCABLE - Connector for FTDI's TTL-232R USB/RS232 Cable&lt;/li&gt;
-    &lt;li&gt;LED_RGB_PLCC4 - PLCC4 RGB LED (Common Anode)&lt;/li&gt;
-    &lt;li&gt;LPC1113/4_QFN - LPC1113/LPC1114 in QFN33&lt;/li&gt;
-    &lt;li&gt;LD39015xx - Ultra low dropout 150mA voltage regulator&lt;/li&gt;
-    &lt;li&gt;MCP24AA32 - Microchip 32K 1.8V I2C EEPROM (SOT23-5)&lt;/li&gt;
-    &lt;li&gt;PN532 - 13.56MHz contactless communication transceiver&lt;/li&gt;
-    &lt;li&gt;TRANSISTOR_NPN - 500mA 45V NPN Transistor (BC817)&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.04&lt;/td&gt;
-  &lt;td&gt;14 January, 2010&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;ANTENNA868MHZ - 868MHz SMT/Chip Antenna&lt;/li&gt;
-    &lt;li&gt;AT86RF212 - 700/800/900 MHz Transceiver&lt;/li&gt;
-    &lt;li&gt;BALUN - 800-1000 MHz (1206)&lt;/li&gt;
-    &lt;li&gt;BALUN+LP - 863-928 MHz Balun with Built-In LP Filter (0805)&lt;/li&gt;
-    &lt;li&gt;LOWPASSFILTER - 869MHz RF Low Pass Filter (0603)&lt;/li&gt;
-    &lt;li&gt;SMACONNECTOR - 90° DIP SMA Connector&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.03&lt;/td&gt;
-  &lt;td&gt;15 December 2009&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;BUTTON_SMT - 4-Pin soft-touch SMT button&lt;/li&gt;
-    &lt;li&gt;DIODE - Add SOD-323, SOD-523 Footprints&lt;/li&gt;
-    &lt;li&gt;FERRITE - 120 0hm, 600mA Ferrite Chip&lt;/li&gt;
-    &lt;li&gt;PSP_LCDOUTLINE - Dimensional Drawing for Sharp LQ043 LCD&lt;/li&gt;
-    &lt;li&gt;RJ45 - Ethernet Connector with LEDs and internal transformer&lt;/li&gt;
-  &lt;/ul&gt;
-Parts Updated:
-&lt;ul&gt;
-&lt;li&gt;DCBARREL - SMT version updated to improve manufacturability (added tRestrict polygons)&lt;/li&gt;
-&lt;li&gt;JTAG-CORTEXM3 - Footprints updated to correspond to real physical dimensions&lt;/li&gt;
-&lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.02&lt;/td&gt;
-  &lt;td&gt;26 November 2009&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;BAT54C - 200mA 30V Dual Schottky Diode (Common Cathode) &lt;/li&gt;
-    &lt;li&gt;HEADER-1x20 - 1x20 2.54mm/0.1" Header Pins&lt;/li&gt;
-    &lt;li&gt;LPC2478 - 72MHz ARM7 MCU (QFP208 Package)&lt;/li&gt;
-    &lt;li&gt;LPC1113/4 - 50MHz Cortex M0 MCU (QFP48 Package)&lt;/li&gt;
-    &lt;li&gt;MAX1698 - Step-Up Current Regulator for LED Backlights&lt;/li&gt;
-    &lt;li&gt;MT48LC4M16A2P - Micron 64MB SDRAM (4Mb x 16)&lt;/li&gt;
-    &lt;li&gt;PTC - 100ma, 250ma and 750mA PTCs&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.01&lt;/td&gt;
-  &lt;td&gt;14 November 2009&lt;/td&gt;
-  &lt;td&gt;
-  Parts Added:
-  &lt;ul&gt;
-    &lt;li&gt;NCP1400A - 100mA PWM Step-Up Regulator (3.3V and 5.0V SOT23-5)&lt;/li&gt;
-    &lt;li&gt;MIC5320 - Dual 150mA ULDO Linear Regulator&lt;/li&gt;
-    &lt;li&gt;INDUCTOR - 10µH, 22µH and 47µH 1007 Inductors&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;br/&gt;
-  &lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-  &lt;td&gt;1.00&lt;/td&gt;
-  &lt;td&gt;12 November 2009&lt;/td&gt;
-  &lt;td&gt;Initial Release&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/p&gt;
-
-&lt;h3&gt;License&lt;/h3&gt;
-&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
-&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;/p&gt;</description>
-<packages>
-<package name="SOIC-4">
-<description>&lt;b&gt;SOIC-4 Package&lt;/b&gt;&lt;p&gt;
-Source: http://www.fairchildsemi.com/products/discrete/pdf/soic4_dim.pdf</description>
-<wire x1="-2.35" y1="2" x2="2.35" y2="2" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="2" x2="2.35" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="-2" x2="-2.35" y2="-2" width="0.2032" layer="21"/>
-<wire x1="-2.35" y1="-2" x2="-2.35" y2="2" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="0.97" x2="-1.27" y2="0.97" width="0.1016" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0.635" width="0.1016" layer="21"/>
-<wire x1="0.955" y1="0.945" x2="1.59" y2="0.945" width="0.1016" layer="21"/>
-<wire x1="-1.9" y1="-1.275" x2="-1.6" y2="-1.275" width="0.1016" layer="21" curve="-99.939481"/>
-<wire x1="-1.3" y1="-1.275" x2="-1.6" y2="-1.275" width="0.1016" layer="21" curve="-99.939481"/>
-<wire x1="1.275" y1="-1.275" x2="1.575" y2="-1.275" width="0.1016" layer="21" curve="-99.939481"/>
-<wire x1="1.875" y1="-1.275" x2="1.575" y2="-1.275" width="0.1016" layer="21" curve="-99.939481"/>
-<smd name="-" x="-1.3" y="3.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="+" x="1.3" y="3.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="~2" x="1.3" y="-3.05" dx="1.2" dy="1.2" layer="1" rot="R180"/>
-<smd name="~1" x="-1.3" y="-3.05" dx="1.2" dy="1.2" layer="1" rot="R180"/>
-<text x="-2.54" y="-1.905" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-1.905" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="2.05" x2="-0.95" y2="3.45" layer="51"/>
-<rectangle x1="0.95" y1="2.05" x2="1.75" y2="3.45" layer="51"/>
-<rectangle x1="0.95" y1="-3.45" x2="1.75" y2="-2.05" layer="51" rot="R180"/>
-<rectangle x1="-1.75" y1="-3.45" x2="-0.95" y2="-2.05" layer="51" rot="R180"/>
-<rectangle x1="-2.05" y1="1.5" x2="2.05" y2="1.8" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BRIDGERECTIFIER">
-<wire x1="-1.905" y1="-3.175" x2="-4.064" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-3.175" x2="-2.286" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-2.7178" y1="-4.0386" x2="-0.9398" y2="-2.2606" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="3.175" x2="-4.064" y2="2.794" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="3.175" x2="-2.286" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-2.7178" y1="4.0386" x2="-1.0668" y2="2.3876" width="0.254" layer="94"/>
-<wire x1="3.175" y1="1.905" x2="2.794" y2="4.064" width="0.254" layer="94"/>
-<wire x1="3.175" y1="1.905" x2="1.016" y2="2.286" width="0.254" layer="94"/>
-<wire x1="2.3622" y1="1.016" x2="4.1402" y2="2.794" width="0.254" layer="94"/>
-<wire x1="3.175" y1="-1.905" x2="2.794" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="3.175" y1="-1.905" x2="1.016" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="2.3622" y1="-1.0668" x2="4.1402" y2="-2.8448" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="3.175" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-1.905" y2="-3.175" width="0.1524" layer="94"/>
-<wire x1="-3.2766" y1="-1.8034" x2="-5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="-4.064" y1="-2.794" x2="-2.286" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.2766" y2="1.8034" width="0.1524" layer="94"/>
-<wire x1="-4.064" y1="2.794" x2="-2.286" y2="1.016" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="3.175" x2="0" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="0" y1="5.08" x2="1.8034" y2="3.2766" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="2.286" x2="2.794" y2="4.064" width="0.254" layer="94"/>
-<wire x1="3.175" y1="1.905" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="1.8034" y2="-3.2766" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-2.286" x2="2.794" y2="-4.064" width="0.254" layer="94"/>
-<text x="2.54" y="-5.715" size="1.27" layer="96">&gt;VALUE</text>
-<text x="2.54" y="4.445" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-0.635" size="1.778" layer="97">-</text>
-<text x="2.54" y="-0.635" size="1.778" layer="97">+</text>
-<pin name="AC1" x="0" y="5.08" visible="off" length="point" direction="pas" rot="R270"/>
-<pin name="+" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<pin name="AC2" x="0" y="-5.08" visible="off" length="point" direction="pas" rot="R90"/>
-<pin name="-" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BRIDGERECTIFIER" prefix="G" uservalue="yes">
-<description>&lt;p&gt;&lt;b&gt;Bridge Rectifier&lt;/b&gt;&lt;/p&gt;
-SOIC-4:
-&lt;ul&gt;
-&lt;li&gt;Comchip B4S-G - 400V 800mA, Peak Vf 1.1V (Digikey: 641-1334-1-ND)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="BRIDGERECTIFIER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC-4">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-<connect gate="G$1" pin="AC1" pad="~1"/>
-<connect gate="G$1" pin="AC2" pad="~2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="tag-connect">
 <description>&lt;h3&gt;TAG-CONNECT ICSP Connector&lt;/h3&gt;&lt;BR&gt;&lt;I&gt;Manufacturer:&lt;/I&gt; &lt;a href="http://www.tag-connect.com"&gt;Tag-Connect&lt;/a&gt;&lt;BR&gt;
 &lt;BR&gt;Cable for easy In-Circuit Serial Programming. Designed for Microchip ICD2, suitable for many others.&lt;BR&gt;
@@ -15175,6 +14880,286 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="SMADIODE">
+<description>&lt;b&gt;SMA Surface Mount Diode&lt;/b&gt;</description>
+<wire x1="-2.15" y1="1.3" x2="2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="1.3" x2="2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="2.15" y1="-1.3" x2="-2.15" y2="-1.3" width="0.2032" layer="51"/>
+<wire x1="-2.15" y1="-1.3" x2="-2.15" y2="1.3" width="0.2032" layer="51"/>
+<wire x1="-3.789" y1="-1.394" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="-1.146" x2="-3.789" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="1.6" x2="3.816" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.6" x2="3.816" y2="1.394" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="1.3365" width="0.127" layer="21"/>
+<wire x1="3.816" y1="1.394" x2="3.816" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.816" y1="-1.6" x2="-3.789" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.789" y1="-1.6" x2="-3.789" y2="-1.146" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="-0.4445" x2="-0.3175" y2="0.4445" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.4445" x2="-0.6985" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.6985" y1="0" x2="-0.3175" y2="-0.4445" width="0.127" layer="21"/>
+<wire x1="-0.6985" y1="-0.4445" x2="-0.6985" y2="0.4445" width="0.127" layer="21"/>
+<smd name="C" x="-2.3495" y="0" dx="2.54" dy="2.54" layer="1"/>
+<smd name="A" x="2.3495" y="0" dx="2.54" dy="2.54" layer="1" rot="R180"/>
+<text x="-2.54" y="1.905" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.286" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-2.825" y1="-1.1" x2="-2.175" y2="1.1" layer="51"/>
+<rectangle x1="2.175" y1="-1.1" x2="2.825" y2="1.1" layer="51" rot="R180"/>
+<rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
+</package>
+<package name="DO-1N4148">
+<wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="-2.54" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.794" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="0.635" x2="1.905" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="A" x="-3.81" y="0" drill="0.9"/>
+<pad name="C" x="3.81" y="0" drill="0.9"/>
+<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-2.032" y="-0.254" size="0.6096" layer="21">&gt;Value</text>
+</package>
+<package name="SOT23-R">
+<description>&lt;b&gt;SOT23&lt;/b&gt; - Reflow soldering</description>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.6524" x2="-1.5724" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="-1.5724" y1="0.6604" x2="-0.5136" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6524" width="0.1524" layer="21"/>
+<wire x1="0.5636" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="0.4224" y1="-0.6604" x2="-0.4364" y2="-0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1" dx="0.6" dy="0.7" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.6" dy="0.7" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.6" dy="0.7" layer="1"/>
+<text x="1.778" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
+<text x="1.778" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOT23-W">
+<description>&lt;b&gt;SOT23&lt;/b&gt; - Wave soldering</description>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.3984" x2="-1.5724" y2="0.6604" width="0.1524" layer="21"/>
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.3984" width="0.1524" layer="21"/>
+<wire x1="0.2954" y1="-0.6604" x2="-0.3094" y2="-0.6604" width="0.1524" layer="21"/>
+<smd name="3" x="0" y="1.3" dx="2.8" dy="1.4" layer="1"/>
+<smd name="2" x="1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
+<smd name="1" x="-1.1" y="-1.3" dx="1.2" dy="1.4" layer="1"/>
+<text x="2.032" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
+<text x="2.032" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="SOD-523">
+<description>SOD-523 (0.8x1.2mm)
+
+&lt;p&gt;Source: http://www.rohm.com/products/databook/di/pdf/rb751s-40.pdf&lt;/p&gt;</description>
+<wire x1="-0.75" y1="1.5" x2="0.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="1.5" x2="0.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0.75" y1="-1.5" x2="-0.75" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1.5" x2="-0.75" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="0.25" x2="1.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.25" x2="2" y2="0.25" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.25" x2="1.5" y2="-0.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.25" x2="2" y2="-0.25" width="0.127" layer="51"/>
+<wire x1="2" y1="-0.25" x2="1.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.25" x2="1" y2="-0.25" width="0.127" layer="51"/>
+<wire x1="1.5" y1="0.25" x2="1.5" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-0.25" x2="1.5" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-0.4445" y1="-0.1905" x2="0.4445" y2="-0.1905" width="0.127" layer="21"/>
+<wire x1="0.4445" y1="-0.1905" x2="0" y2="0.1905" width="0.127" layer="21"/>
+<wire x1="0" y1="0.1905" x2="-0.4445" y2="-0.1905" width="0.127" layer="21"/>
+<wire x1="-0.4445" y1="0.1905" x2="0.4445" y2="0.1905" width="0.127" layer="21"/>
+<smd name="K" x="0" y="0.8" dx="0.8" dy="0.6" layer="1"/>
+<smd name="A" x="0" y="-0.8" dx="0.8" dy="0.6" layer="1"/>
+<text x="1.016" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+<text x="1.016" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.4" y1="-0.6" x2="0.4" y2="0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-0.8" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="0.8" layer="51"/>
+</package>
+<package name="SOD-123">
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="51"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="51"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.127" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.762" width="0.127" layer="21"/>
+<smd name="C" x="-1.85" y="0" dx="1.2" dy="0.7" layer="1"/>
+<smd name="A" x="1.85" y="0" dx="1.2" dy="0.7" layer="1"/>
+<text x="-1.1" y="1" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-1.284" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
+</package>
+<package name="SOD-323F">
+<wire x1="-0.85" y1="0.65" x2="0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.65" x2="0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.65" x2="-0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.65" x2="-0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.6" x2="0.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.6" x2="0.3" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.3" y1="-0.6" x2="0.3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="0.2" x2="-1.2" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="0.2" x2="-1.2" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="-0.2" x2="-0.9" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="0.9" y1="0.2" x2="1.2" y2="0.2" width="0.127" layer="51"/>
+<wire x1="1.2" y1="0.2" x2="1.2" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="1.2" y1="-0.2" x2="0.9" y2="-0.2" width="0.127" layer="51"/>
+<smd name="A" x="-1" y="0" dx="1" dy="0.8" layer="1"/>
+<smd name="C" x="1" y="0" dx="1" dy="0.8" layer="1"/>
+<text x="-1.8" y="0.9" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.1" y="-1.7" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="SOD-123FL">
+<wire x1="-0.5" y1="0" x2="0.5" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="0.4" x2="0.5" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.35" y1="0.825" x2="1.35" y2="0.825" width="0.127" layer="21"/>
+<wire x1="1.35" y1="0.825" x2="1.35" y2="-0.825" width="0.127" layer="21"/>
+<wire x1="1.35" y1="-0.825" x2="-1.35" y2="-0.825" width="0.127" layer="21"/>
+<wire x1="-1.35" y1="-0.825" x2="-1.35" y2="0.825" width="0.127" layer="21"/>
+<smd name="C" x="-1.6375" y="0" dx="0.91" dy="1.22" layer="1"/>
+<smd name="A" x="1.6375" y="0" dx="0.91" dy="1.22" layer="1"/>
+<text x="-1.1" y="1" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-1.284" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DIODE">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIODE" prefix="D" uservalue="yes">
+<description>&lt;b&gt;Diode&lt;/b&gt;
+&lt;p&gt;
+&lt;b&gt;SMADIODE&lt;/b&gt; - SMA Surface Mount Package
+&lt;ul&gt;
+&lt;li&gt;20V 1A Schottky Diode Digikey: 641-1014-6-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;DO-1N4148&lt;/b&gt; - Through Hole Small Current Diode&lt;br&gt;
+&lt;b&gt;SOD-123&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;20V 1 A (.5mV Vf) Schottky Diode - Digikey: MBRX120TPMSCT-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;SOD-323&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;10V 570mA (.38mV Vf, 3ns) Schottky Diode - Digikey: ZLLS410CT-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;SOD-523&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;30V 30mA Schottky Diode (RB751S-40TE61) - Digikey: RB751S-40TE61CT-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;SOT23-R/W&lt;/b&gt; - SOT23 Package (R = Solder Paste/Reflow Ovens, W = Hand-Soldering)
+&lt;ul&gt;
+&lt;li&gt;BAT54Film 40V 300mA - Digikey: 497-7162-1-ND&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMA" package="SMADIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO-1N4148" package="DO-1N4148">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23_REFLOW" package="SOT23-R">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23_WAVE" package="SOT23-W">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-523" package="SOD-523">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-123" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-323F" package="SOD-323F">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SOD-123FL" package="SOD-123FL">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15219,7 +15204,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="C6" library="rcl" deviceset="CPOL-EU" device="E2-4" value="4u7"/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="E2-4" value="4u7"/>
 <part name="D1" library="jasons_stuff" deviceset="0805DIODE" device=""/>
-<part name="IC5" library="microbuilder" deviceset="BRIDGERECTIFIER" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="U$1" library="jason_eagle6" deviceset="PWR_SOCKET_2_1MM" device=""/>
 <part name="IC3" library="jasons_stuff" deviceset="PIC12F1822" device="SO08"/>
@@ -15230,6 +15214,17 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="X7" library="jason_eagle6" deviceset="VERTICAL_3_5MM_SOCKET" device=""/>
 <part name="RA2" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="RA4" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="C" library="rcl" deviceset="R-EU_" device="R0603" value="1k8"/>
+<part name="D" library="rcl" deviceset="R-EU_" device="R0603" value="1k8"/>
+<part name="A" library="rcl" deviceset="R-EU_" device="R0603" value="1k8"/>
+<part name="B" library="rcl" deviceset="R-EU_" device="R0603" value="1k8"/>
+<part name="D4" library="adafruit" deviceset="DIODE" device="SOD-123"/>
+<part name="D2" library="adafruit" deviceset="DIODE" device="SOD-123"/>
+<part name="D5" library="adafruit" deviceset="DIODE" device="SOD-123"/>
+<part name="D3" library="adafruit" deviceset="DIODE" device="SOD-123"/>
+<part name="E" library="rcl" deviceset="R-EU_" device="R0603" value="1k8"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -15238,8 +15233,9 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <text x="106.172" y="-96.266" size="3.81" layer="95">MIDI OUTPUTS</text>
 <text x="-39.878" y="-75.184" size="3.81" layer="95">MIDI INPUT</text>
 <text x="-15.24" y="-24.13" size="3.81" layer="95">PROCESSOR</text>
-<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV4</text>
-<text x="-68.834" y="-96.012" size="5.08" layer="95">Jason Hotchkiss</text>
+<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV5</text>
+<text x="-68.834" y="-103.632" size="5.08" layer="95">Jason Hotchkiss
+CC-NC-BY-SA</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="172.72" y="45.72"/>
@@ -15282,7 +15278,6 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="C6" gate="G$1" x="101.6" y="99.06"/>
 <instance part="C5" gate="G$1" x="152.4" y="99.06"/>
 <instance part="D1" gate="G$1" x="7.62" y="-60.96"/>
-<instance part="IC5" gate="G$1" x="86.36" y="99.06"/>
 <instance part="C3" gate="G$1" x="101.6" y="53.34" rot="R90"/>
 <instance part="U$1" gate="G$1" x="40.64" y="101.6" rot="MR180"/>
 <instance part="IC3" gate="G$1" x="2.54" y="-12.7"/>
@@ -15290,9 +15285,20 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <instance part="R2" gate="G$1" x="0" y="43.18" rot="R90"/>
 <instance part="CLK" gate="G$1" x="0" y="55.88"/>
 <instance part="C4" gate="G$1" x="0" y="7.62" rot="R90"/>
-<instance part="X7" gate="G$1" x="2.54" y="-48.26" rot="R180"/>
+<instance part="X7" gate="G$1" x="5.08" y="-35.56" rot="R180"/>
 <instance part="RA2" gate="G$1" x="43.18" y="-22.86"/>
-<instance part="RA4" gate="G$1" x="-38.1" y="-12.7" rot="R180"/>
+<instance part="RA4" gate="G$1" x="-58.42" y="-12.7" rot="R180"/>
+<instance part="C" gate="G$1" x="-17.78" y="-48.26" rot="R270"/>
+<instance part="D" gate="G$1" x="-20.32" y="-48.26" rot="R270"/>
+<instance part="A" gate="G$1" x="-12.7" y="-48.26" rot="R270"/>
+<instance part="B" gate="G$1" x="-10.16" y="-48.26" rot="R270"/>
+<instance part="D4" gate="G$1" x="83.82" y="109.22"/>
+<instance part="D2" gate="G$1" x="83.82" y="104.14"/>
+<instance part="D5" gate="G$1" x="83.82" y="93.98" rot="R180"/>
+<instance part="D3" gate="G$1" x="83.82" y="88.9" rot="R180"/>
+<instance part="E" gate="G$1" x="-5.08" y="-48.26" rot="R270"/>
+<instance part="R24" gate="G$1" x="-38.1" y="-35.56"/>
+<instance part="C7" gate="G$1" x="-27.94" y="-43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15466,12 +15472,15 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <segment>
 <pinref part="IN" gate="G$1" pin="4"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="-58.42" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="X7" gate="G$1" pin="4"/>
-<wire x1="-12.7" y1="-58.42" x2="-5.08" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-48.26" x2="-12.7" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-48.26" x2="-12.7" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="-12.7" y="-58.42"/>
+<wire x1="-35.56" y1="-58.42" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-58.42" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="C" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="-58.42" x2="-5.08" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-53.34" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="-17.78" y="-58.42"/>
+<pinref part="B" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="-53.34" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="-10.16" y="-58.42"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15535,13 +15544,14 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="152.4" y1="93.98" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
 <junction x="152.4" y="88.9"/>
-<pinref part="IC5" gate="G$1" pin="-"/>
-<wire x1="81.28" y1="99.06" x2="76.2" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="99.06" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="91.44" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 <junction x="101.6" y="88.9"/>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="101.6" y1="88.9" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="88.9" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="93.98" x2="88.9" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="93.98" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
+<junction x="88.9" y="88.9"/>
 </segment>
 <segment>
 <label x="33.02" y="20.32" size="1.778" layer="95"/>
@@ -15597,23 +15607,37 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <junction x="193.04" y="-86.36"/>
 <label x="195.58" y="-96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="E" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-53.34" x2="-5.08" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-55.88" x2="0" y2="-55.88" width="0.1524" layer="91"/>
+<label x="-2.54" y="-55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="-45.72" x2="-27.94" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-30.48" y="-50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="C"/>
 <wire x1="10.16" y1="-68.58" x2="7.62" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="-68.58" x2="-17.78" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-68.58" x2="-66.04" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-68.58" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-68.58" x2="-20.32" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-68.58" x2="-66.04" y2="-68.58" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-68.58" x2="-66.04" y2="-58.42" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="P$1"/>
 <wire x1="7.62" y1="-65.532" x2="7.62" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="7.62" y="-68.58"/>
 <pinref part="IN" gate="G$1" pin="5"/>
 <wire x1="-60.96" y1="-58.42" x2="-66.04" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="X7" gate="G$1" pin="3"/>
-<wire x1="-7.62" y1="-45.72" x2="-17.78" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-45.72" x2="-17.78" y2="-68.58" width="0.1524" layer="91"/>
-<junction x="-17.78" y="-68.58"/>
+<pinref part="D" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="-53.34" x2="-20.32" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="-20.32" y="-68.58"/>
+<pinref part="A" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-53.34" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-68.58"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -15627,11 +15651,14 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <junction x="109.22" y="109.22"/>
 <pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="101.6" y1="101.6" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="+"/>
-<wire x1="91.44" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="99.06" x2="93.98" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
 <junction x="101.6" y="109.22"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="101.6" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="88.9" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="104.14" x2="88.9" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="104.14" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<junction x="88.9" y="109.22"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -15643,22 +15670,30 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="AC1"/>
-<wire x1="55.88" y1="109.22" x2="86.36" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="109.22" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="101.6" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="BARREL"/>
 <wire x1="53.34" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="55.88" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="71.12" y1="109.22" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="93.98" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<junction x="71.12" y="109.22"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="AC2"/>
-<wire x1="55.88" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="88.9" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="96.52" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PIN"/>
 <wire x1="53.34" y1="96.52" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="55.88" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="73.66" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="104.14" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
+<junction x="73.66" y="88.9"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -15675,9 +15710,14 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <net name="MIDI_OUT" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="RA4"/>
-<wire x1="-17.78" y1="-12.7" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-30.48" y="-12.7" size="1.778" layer="95"/>
 <pinref part="RA4" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="-12.7" x2="-45.72" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="-45.72" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-35.56" x2="-45.72" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="-35.56" x2="-45.72" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-45.72" y="-12.7"/>
 </segment>
 </net>
 <net name="DAT_LED" class="0">
@@ -15820,6 +15860,44 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <wire x1="104.14" y1="-58.42" x2="124.46" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="X7" gate="G$1" pin="3"/>
+<wire x1="-5.08" y1="-33.02" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="D" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="-43.18" x2="-20.32" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="-33.02" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-17.78" y="-33.02"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="X7" gate="G$1" pin="4"/>
+<wire x1="-5.08" y1="-35.56" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="A" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="B" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-43.18" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-10.16" y="-35.56"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-35.56" x2="-27.94" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-35.56"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-35.56" x2="-33.02" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-38.1" x2="-27.94" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-27.94" y="-35.56"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="X7" gate="G$1" pin="2"/>
+<pinref part="E" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="-38.1" x2="-5.08" y2="-43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -15832,13 +15910,22 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <approved hash="104,1,33.02,-7.62,ICSP,VSS(GND),GND,,,"/>
 <approved hash="113,1,15.5617,54.61,DAT,,,,,"/>
 <approved hash="113,1,33.3417,54.61,PWR,,,,,"/>
-<approved hash="113,1,86.36,99.06,IC5,,,,,"/>
 <approved hash="113,1,102.87,55.0113,C3,,,,,"/>
 <approved hash="113,1,41.7195,-8.89,ICSP,,,,,"/>
 <approved hash="113,1,0.321731,54.61,CLK,,,,,"/>
 <approved hash="113,1,40.8771,-21.4588,RA2,,,,,"/>
-<approved hash="113,1,-35.7971,-14.1012,RA4,,,,,"/>
+<approved hash="113,1,-56.1171,-14.1012,RA4,,,,,"/>
+<approved hash="113,1,83.82,110.397,D4,,,,,"/>
+<approved hash="113,1,83.82,105.317,D2,,,,,"/>
+<approved hash="113,1,83.82,92.8031,D5,,,,,"/>
+<approved hash="113,1,83.82,87.7231,D3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
