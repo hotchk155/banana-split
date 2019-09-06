@@ -184,15 +184,6 @@
 <circle x="0.039" y="-0.047" radius="3.5" width="0.127" layer="21"/>
 <text x="-2.54" y="-7.62" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="JH_JP">
-<smd name="P$1" x="-0.6985" y="0" dx="1.016" dy="1.016" layer="1" roundness="10"/>
-<smd name="P$2" x="0.6985" y="0" dx="1.016" dy="1.016" layer="1" roundness="10"/>
-<text x="-3.048" y="-2.286" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<wire x1="-1.5875" y1="-0.8255" x2="1.5875" y2="-0.8255" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-0.8255" x2="1.5875" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="0.8255" x2="-1.5875" y2="0.8255" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="0.8255" x2="-1.5875" y2="-0.8255" width="0.127" layer="21"/>
-</package>
 </packages>
 <symbols>
 <symbol name="5P">
@@ -267,15 +258,6 @@
 <wire x1="5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <text x="-3.302" y="3.302" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
-<symbol name="JH_JP">
-<pin name="P$1" x="-7.62" y="-1.27" visible="off" length="short"/>
-<pin name="P$2" x="2.54" y="-1.27" visible="off" length="short" rot="R180"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<text x="-7.112" y="-5.08" size="1.778" layer="94">&gt;NAME</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DIN5PIN" prefix="X">
@@ -326,22 +308,6 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JH_JP">
-<gates>
-<gate name="G$1" symbol="JH_JP" x="-1.778" y="0"/>
-</gates>
-<devices>
-<device name="" package="JH_JP">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15255,15 +15221,14 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <part name="D3" library="adafruit" deviceset="DIODE" device="SOD-123"/>
 <part name="R24" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="F" library="jason_eagle6" deviceset="JH_JP" device=""/>
-<part name="D" library="jason_eagle6" deviceset="JH_JP" device=""/>
-<part name="C" library="jason_eagle6" deviceset="JH_JP" device=""/>
-<part name="A" library="jason_eagle6" deviceset="JH_JP" device=""/>
-<part name="B" library="jason_eagle6" deviceset="JH_JP" device=""/>
-<part name="E" library="jason_eagle6" deviceset="JH_JP" device=""/>
 <part name="CK" library="pinhead" deviceset="PINHD-1X1" device=""/>
-<part name="GD" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="GND" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="A" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="B" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="C" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="D" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="F" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
+<part name="E" library="rcl" deviceset="R-EU_" device="R0805" value="1k8"/>
 </parts>
 <sheets>
 <sheet>
@@ -15272,13 +15237,18 @@ Two variants - one "with legs" (for hands-free fit on PCB) and another "without 
 <text x="106.172" y="-96.266" size="3.81" layer="95">MIDI OUTPUTS</text>
 <text x="-39.878" y="-75.184" size="3.81" layer="95">MIDI INPUT</text>
 <text x="-15.24" y="-24.13" size="3.81" layer="95">PROCESSOR</text>
-<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV5</text>
+<text x="-68.834" y="-88.392" size="5.08" layer="95">BANANA SPLIT REV7</text>
 <text x="-68.834" y="-103.632" size="5.08" layer="95">Jason Hotchkiss
 CC-NC-BY-SA</text>
-<text x="-1.016" y="-52.832" size="1.778" layer="97">AC = Hot Ring / MMA
-BD = Hot Tip / NOVATION
+<text x="-1.778" y="-52.832" size="1.778" layer="97">X7 Function
+AC = Hot ring MIDI in / MMA
+BD = Hot tip MIDI in / NOVATION
 EF = Pulse clock out
 </text>
+<wire x1="-2.032" y1="-39.878" x2="-2.032" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="-2.032" y1="-50.8" x2="35.052" y2="-50.8" width="0.1524" layer="97"/>
+<wire x1="35.052" y1="-50.8" x2="35.052" y2="-39.878" width="0.1524" layer="97"/>
+<wire x1="35.052" y1="-39.878" x2="-2.032" y2="-39.878" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="172.72" y="45.72"/>
@@ -15328,7 +15298,9 @@ EF = Pulse clock out
 <instance part="R2" gate="G$1" x="0" y="43.18" rot="R90"/>
 <instance part="CLK" gate="G$1" x="0" y="55.88"/>
 <instance part="C4" gate="G$1" x="0" y="7.62" rot="R90"/>
-<instance part="X7" gate="G$1" x="5.08" y="-35.56" rot="R180"/>
+<instance part="X7" gate="G$1" x="5.08" y="-35.56" smashed="yes" rot="R180">
+<attribute name="NAME" x="6.096" y="-30.226" size="1.778" layer="94" rot="R180"/>
+</instance>
 <instance part="RA2" gate="G$1" x="43.18" y="-22.86"/>
 <instance part="RA4" gate="G$1" x="-58.42" y="-12.7" rot="R180"/>
 <instance part="D4" gate="G$1" x="83.82" y="109.22"/>
@@ -15337,27 +15309,26 @@ EF = Pulse clock out
 <instance part="D3" gate="G$1" x="83.82" y="88.9" rot="R180"/>
 <instance part="R24" gate="G$1" x="-35.56" y="-22.86" rot="R270"/>
 <instance part="C7" gate="G$1" x="-35.56" y="-43.18" rot="R180"/>
-<instance part="F" gate="G$1" x="-25.4" y="-31.75" smashed="yes">
-<attribute name="NAME" x="-28.702" y="-34.036" size="1.778" layer="94"/>
-</instance>
-<instance part="D" gate="G$1" x="-21.59" y="-45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="-19.304" y="-49.022" size="1.778" layer="94" rot="R90"/>
-</instance>
-<instance part="C" gate="G$1" x="-19.05" y="-45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="-16.764" y="-49.022" size="1.778" layer="94" rot="R90"/>
-</instance>
-<instance part="A" gate="G$1" x="-13.97" y="-45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="-11.684" y="-49.022" size="1.778" layer="94" rot="R90"/>
-</instance>
-<instance part="B" gate="G$1" x="-11.43" y="-45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="-9.144" y="-49.022" size="1.778" layer="94" rot="R90"/>
-</instance>
-<instance part="E" gate="G$1" x="-6.35" y="-45.72" smashed="yes" rot="R90">
-<attribute name="NAME" x="-4.064" y="-49.022" size="1.778" layer="94" rot="R90"/>
-</instance>
-<instance part="CK" gate="G$1" x="-50.8" y="-33.02" rot="R180"/>
-<instance part="GD" gate="G$1" x="-73.66" y="-25.4" rot="R180"/>
+<instance part="CK" gate="G$1" x="-50.8" y="-35.56" rot="R180"/>
 <instance part="GND" gate="G$1" x="-73.66" y="-35.56" rot="R180"/>
+<instance part="A" gate="G$1" x="-12.7" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-12.954" y="-43.4086" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="B" gate="G$1" x="-10.16" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-8.128" y="-51.2826" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="C" gate="G$1" x="-17.78" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-15.748" y="-51.2826" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="D" gate="G$1" x="-20.32" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-20.574" y="-43.6626" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="F" gate="G$1" x="-5.08" y="-48.26" smashed="yes" rot="R90">
+<attribute name="NAME" x="-5.588" y="-43.6626" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="E" gate="G$1" x="-27.94" y="-35.56" smashed="yes">
+<attribute name="NAME" x="-28.956" y="-38.6334" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15534,14 +15505,12 @@ EF = Pulse clock out
 <wire x1="-50.8" y1="-58.42" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-58.42" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-58.42" x2="-5.08" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-53.34" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-58.42"/>
-<wire x1="-10.16" y1="-53.34" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-58.42"/>
-<pinref part="C" gate="G$1" pin="P$1"/>
-<pinref part="B" gate="G$1" pin="P$1"/>
-<junction x="-17.78" y="-53.34"/>
-<junction x="-10.16" y="-53.34"/>
+<pinref part="C" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="-53.34" x2="-17.78" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="B" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="-53.34" x2="-10.16" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -15669,11 +15638,9 @@ EF = Pulse clock out
 <label x="195.58" y="-96.52" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-5.08" y1="-53.34" x2="-5.08" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-55.88" x2="0" y2="-55.88" width="0.1524" layer="91"/>
-<label x="-2.54" y="-55.88" size="1.778" layer="95"/>
-<pinref part="E" gate="G$1" pin="P$1"/>
-<junction x="-5.08" y="-53.34"/>
+<wire x1="-5.08" y1="-53.34" x2="0" y2="-53.34" width="0.1524" layer="91"/>
+<label x="0.508" y="-53.594" size="1.778" layer="95"/>
+<pinref part="F" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
@@ -15681,14 +15648,11 @@ EF = Pulse clock out
 <label x="-38.1" y="-50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GD" gate="G$1" pin="1"/>
-<wire x1="-71.12" y1="-25.4" x2="-63.5" y2="-25.4" width="0.1524" layer="91"/>
 <label x="-60.96" y="-25.4" size="1.778" layer="95"/>
 <pinref part="GND" gate="G$1" pin="1"/>
 <wire x1="-63.5" y1="-25.4" x2="-60.96" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-35.56" x2="-63.5" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-63.5" y1="-35.56" x2="-63.5" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="-63.5" y="-25.4"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -15708,10 +15672,8 @@ EF = Pulse clock out
 <junction x="-20.32" y="-68.58"/>
 <wire x1="-12.7" y1="-53.34" x2="-12.7" y2="-68.58" width="0.1524" layer="91"/>
 <junction x="-12.7" y="-68.58"/>
-<pinref part="D" gate="G$1" pin="P$1"/>
-<pinref part="A" gate="G$1" pin="P$1"/>
-<junction x="-20.32" y="-53.34"/>
-<junction x="-12.7" y="-53.34"/>
+<pinref part="D" gate="G$1" pin="1"/>
+<pinref part="A" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -15937,17 +15899,12 @@ EF = Pulse clock out
 <segment>
 <pinref part="X7" gate="G$1" pin="3"/>
 <wire x1="-5.08" y1="-33.02" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-43.18" x2="-20.32" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-33.02" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-33.02"/>
-<pinref part="F" gate="G$1" pin="P$2"/>
-<wire x1="-20.32" y1="-33.02" x2="-22.86" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-20.32" y="-33.02"/>
-<pinref part="D" gate="G$1" pin="P$2"/>
-<pinref part="C" gate="G$1" pin="P$2"/>
-<junction x="-20.32" y="-43.18"/>
-<junction x="-17.78" y="-43.18"/>
+<pinref part="D" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="-43.18" x2="-20.32" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="C" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="-43.18" x2="-17.78" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -15955,34 +15912,35 @@ EF = Pulse clock out
 <pinref part="X7" gate="G$1" pin="4"/>
 <wire x1="-5.08" y1="-35.56" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="-43.18" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-35.56"/>
-<pinref part="A" gate="G$1" pin="P$2"/>
-<pinref part="B" gate="G$1" pin="P$2"/>
-<junction x="-12.7" y="-43.18"/>
-<junction x="-10.16" y="-43.18"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="X7" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="-38.1" x2="-5.08" y2="-43.18" width="0.1524" layer="91"/>
-<pinref part="E" gate="G$1" pin="P$2"/>
-<junction x="-5.08" y="-43.18"/>
+<wire x1="-22.86" y1="-35.56" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-35.56"/>
+<pinref part="E" gate="G$1" pin="2"/>
+<pinref part="A" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="B" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="-43.18" x2="-10.16" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="-38.1" x2="-35.56" y2="-33.02" width="0.1524" layer="91"/>
-<pinref part="F" gate="G$1" pin="P$1"/>
-<wire x1="-35.56" y1="-33.02" x2="-35.56" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-33.02" y1="-33.02" x2="-35.56" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="-35.56" y="-33.02"/>
+<wire x1="-35.56" y1="-38.1" x2="-35.56" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="-35.56" x2="-35.56" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-35.56" x2="-35.56" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-35.56" y="-35.56"/>
 <pinref part="CK" gate="G$1" pin="1"/>
-<wire x1="-48.26" y1="-33.02" x2="-35.56" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-35.56" x2="-35.56" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="E" gate="G$1" pin="1"/>
+<junction x="-33.02" y="-35.56"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="F" gate="G$1" pin="2"/>
+<pinref part="X7" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-43.18" x2="-5.08" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -16006,8 +15964,7 @@ EF = Pulse clock out
 <approved hash="113,1,83.82,105.317,D2,,,,,"/>
 <approved hash="113,1,83.82,92.8031,D5,,,,,"/>
 <approved hash="113,1,83.82,87.7231,D3,,,,,"/>
-<approved hash="113,1,-48.4971,-34.4212,CK,,,,,"/>
-<approved hash="113,1,-71.3571,-26.8012,GD,,,,,"/>
+<approved hash="113,1,-48.4971,-36.9612,CK,,,,,"/>
 <approved hash="113,1,-71.3571,-36.9612,GND,,,,,"/>
 </errors>
 </schematic>
