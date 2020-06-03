@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.815" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2028,7 +2028,7 @@
 <text x="21.3868" y="18.8468" size="1.27" layer="125" font="vector" ratio="20">CK</text>
 <text x="115.824" y="10.541" size="1.27" layer="125" font="vector" ratio="20">CLK</text>
 <text x="1.5875" y="10.8585" size="1.27" layer="126" font="vector" ratio="20" rot="MR180">D</text>
-<text x="15.628796875" y="6.941996875" size="1.27" layer="122" ratio="20" rot="MR0">D1</text>
+<text x="15.628796875" y="6.941996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
 <text x="107.044996875" y="17.188003125" size="1.27" layer="126" font="vector" ratio="20" rot="MR90">D2</text>
 <text x="104.504996875" y="17.188003125" size="1.27" layer="126" font="vector" ratio="20" rot="MR90">D3</text>
 <text x="101.964996875" y="17.188003125" size="1.27" layer="126" font="vector" ratio="20" rot="MR90">D4</text>
@@ -15429,6 +15429,38 @@
 <text x="27.14625" y="163.068" size="1.27" layer="126" font="vector" ratio="20" rot="MR0">R24</text>
 <text x="41.0718" y="152.2603" size="1.27" layer="125" font="vector" ratio="20">RA2</text>
 <text x="45.9613" y="152.2603" size="1.27" layer="125" font="vector" ratio="20">RA4</text>
+<text x="15.628796875" y="6.941996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="14.866796875" y="27.261996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="14.358796875" y="48.089996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="15.120796875" y="68.917996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="15.374796875" y="89.745996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="15.120796875" y="110.573996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="14.866796875" y="131.401996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<text x="15.120796875" y="151.975996875" size="1.27" layer="122" font="vector" ratio="20" rot="MR0">D1</text>
+<wire x1="11.938" y1="5.334" x2="11.938" y2="6.35" width="0.254" layer="22"/>
+<wire x1="11.938" y1="6.35" x2="14.478" y2="6.35" width="0.254" layer="22"/>
+<wire x1="14.478" y1="6.35" x2="14.478" y2="5.334" width="0.254" layer="22"/>
+<wire x1="11.938" y1="26.162" x2="11.938" y2="26.924" width="0.254" layer="22"/>
+<wire x1="11.938" y1="26.924" x2="14.478" y2="26.924" width="0.254" layer="22"/>
+<wire x1="14.478" y1="26.924" x2="14.478" y2="26.162" width="0.254" layer="22"/>
+<wire x1="11.938" y1="46.482" x2="11.938" y2="47.498" width="0.254" layer="22"/>
+<wire x1="11.938" y1="47.498" x2="14.478" y2="47.498" width="0.254" layer="22"/>
+<wire x1="14.478" y1="47.498" x2="14.478" y2="46.482" width="0.254" layer="22"/>
+<wire x1="11.938" y1="67.31" x2="11.938" y2="68.326" width="0.254" layer="22"/>
+<wire x1="11.938" y1="68.326" x2="14.478" y2="68.326" width="0.254" layer="22"/>
+<wire x1="14.478" y1="68.326" x2="14.478" y2="67.31" width="0.254" layer="22"/>
+<wire x1="11.938" y1="87.884" x2="11.938" y2="88.9" width="0.254" layer="22"/>
+<wire x1="11.938" y1="88.9" x2="14.478" y2="88.9" width="0.254" layer="22"/>
+<wire x1="14.478" y1="88.9" x2="14.478" y2="87.884" width="0.254" layer="22"/>
+<wire x1="11.938" y1="108.712" x2="11.938" y2="109.728" width="0.254" layer="22"/>
+<wire x1="11.938" y1="109.728" x2="14.478" y2="109.728" width="0.254" layer="22"/>
+<wire x1="14.478" y1="109.728" x2="14.478" y2="108.712" width="0.254" layer="22"/>
+<wire x1="11.938" y1="129.286" x2="11.938" y2="130.302" width="0.254" layer="22"/>
+<wire x1="11.938" y1="130.302" x2="14.478" y2="130.302" width="0.254" layer="22"/>
+<wire x1="14.478" y1="130.302" x2="14.478" y2="129.286" width="0.254" layer="22"/>
+<wire x1="11.938" y1="150.114" x2="11.938" y2="151.13" width="0.254" layer="22"/>
+<wire x1="11.938" y1="151.13" x2="14.478" y2="151.13" width="0.254" layer="22"/>
+<wire x1="14.478" y1="151.13" x2="14.478" y2="150.114" width="0.254" layer="22"/>
 </plain>
 <libraries>
 <library name="jason_eagle6">
@@ -17201,9 +17233,7 @@ design rules under a new name.</description>
 <element name="C5" library="rcl" package="E2-4" value="4u7" x="81.534" y="14.986" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="11.049" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D1" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="3.81" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="6.942" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D1" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="3.81" smashed="yes" rot="MR270"/>
 <element name="C3" library="rcl" package="C0805" value="" x="69.977" y="19.177" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="18.542" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="16.637" size="1.27" layer="28" rot="MR0"/>
@@ -17376,9 +17406,7 @@ design rules under a new name.</description>
 <element name="C11" library="rcl" package="E2-4" value="4u7" x="81.534" y="35.687" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="31.75" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D6" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="24.511" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="27.643" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D6" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="24.511" smashed="yes" rot="MR270"/>
 <element name="C12" library="rcl" package="C0805" value="" x="69.977" y="39.878" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="39.243" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="37.338" size="1.27" layer="28" rot="MR0"/>
@@ -17551,9 +17579,7 @@ design rules under a new name.</description>
 <element name="C19" library="rcl" package="E2-4" value="4u7" x="81.534" y="56.388" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="52.451" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D12" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="45.212" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="48.344" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D12" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="45.212" smashed="yes" rot="MR270"/>
 <element name="C20" library="rcl" package="C0805" value="" x="69.977" y="60.579" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="59.944" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="58.039" size="1.27" layer="28" rot="MR0"/>
@@ -17726,9 +17752,7 @@ design rules under a new name.</description>
 <element name="C27" library="rcl" package="E2-4" value="4u7" x="81.534" y="77.089" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="73.152" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D18" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="65.913" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="69.045" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D18" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="65.913" smashed="yes" rot="MR270"/>
 <element name="C28" library="rcl" package="C0805" value="" x="69.977" y="81.28" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="80.645" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="78.74" size="1.27" layer="28" rot="MR0"/>
@@ -17901,9 +17925,7 @@ design rules under a new name.</description>
 <element name="C35" library="rcl" package="E2-4" value="4u7" x="81.534" y="97.79" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="93.853" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D24" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="86.614" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="89.746" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D24" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="86.614" smashed="yes" rot="MR270"/>
 <element name="C36" library="rcl" package="C0805" value="" x="69.977" y="101.981" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="101.346" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="99.441" size="1.27" layer="28" rot="MR0"/>
@@ -18076,9 +18098,7 @@ design rules under a new name.</description>
 <element name="C43" library="rcl" package="E2-4" value="4u7" x="81.534" y="118.491" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="114.554" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D30" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="107.315" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="110.447" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D30" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="107.315" smashed="yes" rot="MR270"/>
 <element name="C44" library="rcl" package="C0805" value="" x="69.977" y="122.682" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="122.047" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="120.142" size="1.27" layer="28" rot="MR0"/>
@@ -18251,9 +18271,7 @@ design rules under a new name.</description>
 <element name="C51" library="rcl" package="E2-4" value="4u7" x="81.534" y="139.192" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="135.255" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D36" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="128.016" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="131.148" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D36" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="128.016" smashed="yes" rot="MR270"/>
 <element name="C52" library="rcl" package="C0805" value="" x="69.977" y="143.383" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="142.748" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="140.843" size="1.27" layer="28" rot="MR0"/>
@@ -18426,9 +18444,7 @@ design rules under a new name.</description>
 <element name="C59" library="rcl" package="E2-4" value="4u7" x="81.534" y="159.893" smashed="yes" rot="R270">
 <attribute name="NAME" x="80.391" y="155.956" size="1.27" layer="25" font="vector" ratio="20"/>
 </element>
-<element name="D42" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="148.717" smashed="yes" rot="MR270">
-<attribute name="NAME" x="15.6288" y="151.849" size="1.27" layer="22" font="vector" ratio="20" rot="MR0"/>
-</element>
+<element name="D42" library="jasons_stuff" package="0805DIODE" value="0805DIODE" x="13.208" y="148.717" smashed="yes" rot="MR270"/>
 <element name="C60" library="rcl" package="C0805" value="" x="69.977" y="164.084" smashed="yes" rot="MR0">
 <attribute name="NAME" x="74.168" y="163.449" size="1.27" layer="26" font="vector" ratio="20" rot="MR0"/>
 <attribute name="VALUE" x="71.247" y="161.544" size="1.27" layer="28" rot="MR0"/>
