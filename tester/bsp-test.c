@@ -15,8 +15,8 @@
 #pragma DATA _CONFIG2, _WRT_OFF & _PLLEN_OFF & _STVREN_ON & _BORV_19 & _LVP_OFF
 #pragma CLOCK_FREQ 16000000
 
-#define TRIS_A 0b11111011
-#define TRIS_C 0b11110011
+#define TRIS_A 0b11111000
+#define TRIS_C 0b11111110
 
 //
 // TYPE DEFS
@@ -27,14 +27,16 @@ typedef unsigned char byte;
 // MACRO DEFS
 //
 
-#define P_LED1		latc.2 	// MIDI input red LED
-#define P_LED2		latc.3 	// Blue LED
-#define P_LED3		lata.2 	// Yellow LED
-#define P_SWITCH	porta.5
+#define P_LED1		lata.0 	
+#define P_LED2		lata.1
+#define P_LED3		lata.2 	
+#define P_LED4		latc.0
+#define P_SWITCH	portc.3
 
 #define P_RED		P_LED1
-#define P_BLUE		P_LED2
+#define P_GREEN		P_LED2
 #define P_YELLOW	P_LED3
+#define P_BLUE		P_LED4
 
 
 //#define P_LEDR 	lata.0
@@ -265,10 +267,6 @@ void setBPM(int b)
 }
 
 
-#define P_LED1		latc.2 	// MIDI input red LED
-#define P_LED2		latc.3 	// Blue LED
-#define P_LED3		lata.2 	// Yellow LED
-#define P_SWITCH	porta.5
 
 ////////////////////////////////////////////////////////////
 // MAIN
@@ -285,8 +283,8 @@ void main()
 	anselc = 0b00000000;
 	porta=0;
 	portc=0;
-	wpua.5=1;
-	option_reg.7=0	;
+	wpuc.3=1;
+	option_reg.7=0;
 		
 	// initialise MIDI comms
 	initUSART();
@@ -324,6 +322,7 @@ void main()
 	intcon.6 = 1; //PEIE
 	
 	delay_ms(200);
+	P_RED=1;
 	// App loop
 	for(;;)
 	{	
@@ -334,24 +333,16 @@ void main()
 			send(MIDI_SYNCH_TICK);			
 			delay_ms(BEAT_DELAY);
 		}		
-		P_RED = 1;
+		P_RED=0;
+		P_GREEN=0;
+		P_YELLOW = 1;
 		byte result = do_test();
-		P_RED = 0;
+		P_YELLOW = 0;
 		if(result) {
-				P_BLUE=1;
-				P_YELLOW=1;
-				delay_s(1);
-				P_BLUE=1;
-				P_YELLOW=1;
+				P_GREEN=1;
 		}
 		else {
-			for(int i=0; i<3; ++i) {
-				P_BLUE = 0;
-				P_YELLOW=1;
-				delay_s(1);
-				P_YELLOW=0;
-				delay_ms(200);
-			}
+				P_RED=1;
 		}
 	}
 }
