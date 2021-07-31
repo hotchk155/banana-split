@@ -1,5 +1,5 @@
 [Settings]
-Active Directory=D:\GitHub\banana-split\tester\
+Active Directory=C:\GitHub\banana-split\tester\
 Target=PIC16LF1825
 Active Compiler=BoostC
 Active Config=Release
